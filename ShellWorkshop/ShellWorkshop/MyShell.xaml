@@ -23,6 +23,15 @@
             </ShellContent>
         </ShellSection>
     </ShellItem>
-    
+    <ShellItem Title="Second content">
+        <ShellSection Title="First view from second content">
+            <ShellContent Title="Second from second Content">
+                <local:FirstView/>
+            </ShellContent>
+            <ShellContent Title="Second view from second Content">
+                <local:ThirdView/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
 
 </Shell>
