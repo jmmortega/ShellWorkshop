@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ShellWorkshop"
+             x:Class="ShellWorkshop.MyShell">
+
+    <Shell.MenuItems>
+        
+    </Shell.MenuItems>
+
+    <ShellItem Title="First content">
+        <ShellSection Title="First view">
+            <ShellContent Title="First">
+                <local:FirstView/>
+            </ShellContent>
+            <ShellContent Title="Second">
+                <local:SecondView/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection Title="Second view">
+            <ShellContent>
+                <local:SecondView/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+    
+
+</Shell>

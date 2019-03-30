@@ -11,7 +11,7 @@ namespace ShellWorkshop
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MyShell();
         }
 
         protected override void OnStart()
