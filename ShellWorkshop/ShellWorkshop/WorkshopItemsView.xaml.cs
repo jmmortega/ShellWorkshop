@@ -16,15 +16,7 @@ namespace ShellWorkshop
 		public WorkshopItemsView ()
 		{
 			InitializeComponent ();
-		}
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-
-            LabelName.Text = $"My name is {Name}";
-        }
-
-        public string Name { get; set; }
+            ActorsCollection.ItemsSource = DataGeneration.CreateActors();
+        }                
     }
 }
