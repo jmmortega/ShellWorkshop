@@ -12,6 +12,10 @@
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                       Text="Ups, no data AMIGO"/>
+            </CollectionView.EmptyView>                
         </CollectionView>
     </ContentPage.Content>
 </ContentPage>

@@ -16,7 +16,7 @@ namespace ShellWorkshop
 		public WorkshopItemsView ()
 		{
 			InitializeComponent ();
-            ActorsCollection.ItemsSource = DataGeneration.CreateActors();
+            //ActorsCollection.ItemsSource = DataGeneration.CreateActors();
         }                
     }
 }
