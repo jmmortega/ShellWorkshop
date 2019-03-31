@@ -2,6 +2,9 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ShellWorkshop"
+             RouteScheme="app"
+             RouteHost="crossdvlup.com"             
+             Route="workshop"             
              x:Class="ShellWorkshop.MyShell">
 
     <Shell.MenuItems>
@@ -23,13 +26,16 @@
             </ShellContent>
         </ShellSection>
     </ShellItem>
-    <ShellItem Title="Second content">
-        <ShellSection Title="First view from second content">
+    <ShellItem Title="Second content" Route="SecondShellItem">
+        <ShellSection Title="First view from second content" Route="SecondShellSection">
             <ShellContent Title="Second from second Content">
                 <local:FirstView/>
             </ShellContent>
             <ShellContent Title="Second view from second Content">
                 <local:ThirdView/>
+            </ShellContent>
+            <ShellContent Title="NewPage">
+                <local:WorkshopItemsView/>
             </ShellContent>
         </ShellSection>
     </ShellItem>

@@ -13,5 +13,10 @@ namespace ShellWorkshop
         {
             InitializeComponent();
         }
+
+        protected override void OnNavigating(ShellNavigatingEventArgs args)
+        {
+            base.OnNavigating(args);            
+        }
     }
 }

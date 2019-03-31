@@ -12,6 +12,13 @@ namespace ShellWorkshop
             InitializeComponent();
 
             MainPage = new MyShell();
+
+            RegisterNavigation();
+        }
+
+        private void RegisterNavigation()
+        {
+            Routing.RegisterRoute(nameof(WorkshopItemsView).ToLower(), typeof(WorkshopItemsView));
         }
 
         protected override void OnStart()
